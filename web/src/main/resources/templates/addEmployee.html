@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" th:href="@{/css/addEmployee.css}">
+    <title>Ajouter un employé</title>
+</head>
+<body>
+    <form method="post" th:action="@{/addEmployee}" th:object="${employee}">
+        <fieldset>
+            <legend>Ajouter un employé</legend>
+            <div>
+                <label for="firstname">Prénom :</label>
+                <input type="text" id="firstname" th:field="*{firstName}">
+            </div>
+            <div>
+                <label for="lastname">Nom :</label>
+                <input type="text" id="lastname" th:field="*{lastName}">
+            </div>
+            <div>
+                <label for="email">Email :</label>
+                <input type="text" id="email" th:field="*{mail}">
+            </div>
+            <div>
+                <label for="password">Password :</label>
+                <input type="password" id="password" th:field="*{password}">
+            </div>
+        </fieldset>
+        <button class="btn"type="submit">Créer</button>
+    </form>
+</body>
+</html>

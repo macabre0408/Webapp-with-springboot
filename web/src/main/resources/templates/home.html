@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{/css/home.css}">
+    <title>home</title>
+</head>
+<body>
+        <h2>Liste des employées</h2>
+		<p th:if="${employees.empty}">
+			Aucun employée en base de données
+		</p>
+        <table th:unless="${employees.empty}">
+            <thead>
+                <tr>
+                    <th>Prénom</th>
+                    <th>Noms</th>
+                    <th colspan="2">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="employee, row:${employees}">
+                    <td th:class="${row.index % 2==0} ? 'stripped-cel-1' : 'stripped-cel-2'"><span th:text="${employee.firstName}">  </span></td>
+                    <td th:class="${row.index % 2==0} ? 'stripped-cel-2' : 'stripped-cel-1'"><span th:text="${employee.lastName}">  </span></td>
+					<td><a th:href="@{/employee/{id}(id=${employee.id})}"><button class="btn btn-info"><span>Update</span></button></a></td>
+					<td><a th:href="@{/deleteEmployee/{id}(id=${employee.id})}"><button class="btn btn-danger"><span>Delete</span></button></a></td>
+                </tr>
+            </tbody>
+        </table>
+        <a th:href="@{addEmployee}"><button class="btn btn-primary">Ajouter</button></a>
+    </body>
+</html>

@@ -1,0 +1,77 @@
+/* src/main/resources/static/css/home.css */
+h2{
+	text-align: center;
+}
+table {
+    border-collapse: collapse;
+    border-radius: 15px;
+    margin: auto;
+    width: 80%;
+}
+
+table, tr, th, td {
+    border: 4px solid black;
+    text-align: center;
+}
+
+th {
+    background-color: rgba(0, 0, 0, 0.493);
+}
+
+th, td {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.stripped-cel-1 {
+    background-color: rgba(97, 89, 89, 0.363);
+}
+
+.stripped-cel-2 {
+    background-color: rgb(255, 255, 255);
+}
+.btn{
+	display: block;
+    border:3px, solid, black;
+    margin:auto;
+    padding-top: 10px;
+    padding-left:10px;
+    border-radius: 10px;
+    width: 200px;
+    box-shadow:
+  2.3px 2.3px 1.9px rgba(0, 0, 0, 0.062),
+  5.4px 5.4px 4.3px rgba(0, 0, 0, 0.09),
+  9.7px 9.7px 7.7px rgba(0, 0, 0, 0.11),
+  16.1px 16.1px 12.8px rgba(0, 0, 0, 0.13),
+  26.5px 26.5px 21.2px rgba(0, 0, 0, 0.15),
+  46.2px 46.2px 37px rgba(0, 0, 0, 0.178),
+  100px 100px 80px rgba(0, 0, 0, 0.24)
+;
+}
+.btn-info{
+    background-color: greenyellow;
+}
+.btn-info:hover{
+    background-color: rgb(198, 245, 129);
+}
+.btn-danger{
+    background-color: red;
+}
+.btn-primary{
+    background-color: rgb(255, 255, 0);
+    margin-top: 20px;
+}
+.btn-danger:hover{
+    background-color: rgb(201, 89, 89);
+    }
+.btn-info:hover + span{
+    font-weight: 700;
+	font-size: 16px;
+}
+.btn-danger:hover + span{
+    font-weight: 700;
+	font-size: 16px;
+}
+a {
+    text-decoration: none;
+}

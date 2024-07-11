@@ -1,0 +1,53 @@
+/* Styles for inputs */
+input {
+    margin-bottom: 10px;
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 16px; /* Example font size */
+}
+
+/* Styles for form */
+form {
+    margin: auto;
+    width: 80%; /* Adjust width as needed */
+    max-width: 400px; /* Example max-width */
+}
+
+/* Styles for fieldset */
+fieldset {
+    border: none; /* Remove border */
+    padding: 10px;
+    margin: 0;
+}
+
+/* Styles for buttons */
+.btn {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgba(27, 76, 236, 0.973);
+    padding: 5px;
+    box-shadow:
+        2.3px 2.3px 1.9px rgba(0, 0, 0, 0.062),
+        5.4px 5.4px 4.3px rgba(0, 0, 0, 0.09),
+        9.7px 9.7px 7.7px rgba(0, 0, 0, 0.11),
+        16.1px 16.1px 12.8px rgba(0, 0, 0, 0.13),
+        26.5px 26.5px 21.2px rgba(0, 0, 0, 0.15),
+        46.2px 46.2px 37px rgba(0, 0, 0, 0.178),
+        100px 100px 80px rgba(0, 0, 0, 0.24);
+}
+
+/* Hover effect for buttons */
+.btn:hover {
+    background-color: rgba(58, 101, 245, 0.973);
+}
+
+/* Focus style for inputs */
+input:focus {
+    border: 4px solid black;
+    height: 35px;
+    width: 100%; /* Example width */
+}
